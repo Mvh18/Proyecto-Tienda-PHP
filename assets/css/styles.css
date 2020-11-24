@@ -43,6 +43,10 @@ td {
 
 }
 
+.thumb{
+    width: 105px;
+}
+
 /*CONTAINER*/
 
 #container {
@@ -254,6 +258,16 @@ button,
     margin-bottom: 20px;
 }
 
+
+.button-gestion{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.button-red{
+    background: red;
+    border: 1px solid orange;
+}
 
 label,
 input[type="button"],
