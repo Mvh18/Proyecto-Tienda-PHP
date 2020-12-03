@@ -292,4 +292,23 @@ class Pedido
         }
         return $result;
     }
+
+    public function update()
+    {
+        $status = $this->getEstado();
+        
+
+        $sql = "UPDATE pedidos SET estado='$status'";
+
+
+        $sql .= "WHERE id=($this->id);";
+
+        $guardar = $this->db->query($sql);
+
+        $result = false;
+        if ($guardar) {
+            $result = true;
+        }
+        return $result;
+    }
 }
